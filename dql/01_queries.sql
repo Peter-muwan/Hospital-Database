@@ -1,15 +1,32 @@
+-- ============================================
+-- HOSPITAL DATABASE DQL QUERIES
+-- ============================================
+
+-- ============================================
+-- QUERY 1: COUNT
+-- ============================================
+
 -- How many patients are registered in the hospital?
 SELECT COUNT(*) AS Total_Patients
 FROM Patients;
 
+-- ============================================
+-- QUERY 2: SUM
+-- ============================================
 -- What is the total amount billed by the hospital?
 SELECT SUM(Amount) AS Total_Billed
 FROM Billing;
 
+-- ============================================
+-- QUERY 3: AVG
+-- ============================================
 -- What is the average amount billed for a hospital visit?
 SELECT AVG(Amount) AS Average_Billing
 FROM Billing;
 
+-- ============================================
+-- QUERY 4: MIN AND MAX
+-- ============================================
 -- What are the highest and lowest amounts billed by the hospital?
 -- Demonstrates MIN and MAX
 SELECT
@@ -17,6 +34,9 @@ SELECT
     MAX(Amount) AS Highest_Bill
 FROM Billing;
 
+-- ============================================
+-- QUERY 5: GROUP BY
+-- ============================================
 -- How many appointments has each doctor received?
 -- Demonstrates GROUP BY
 SELECT
@@ -25,6 +45,9 @@ SELECT
 FROM Appointments
 GROUP BY Doctor_ID;
 
+-- ============================================
+-- QUERY 6: GROUP BY AND SUM
+-- ============================================
 -- How much money is associated with each payment method?
 -- Demonstrates GROUP BY and SUM
 SELECT
@@ -33,6 +56,9 @@ SELECT
 FROM Billing
 GROUP BY Payment_Method;
 
+-- ============================================
+-- QUERY 7: ORDER BY
+-- ============================================
 -- Which patients have the highest billing amounts?
 -- Demonstrates ORDER BY
 SELECT
@@ -43,6 +69,9 @@ SELECT
 FROM Billing
 ORDER BY Amount DESC;
 
+-- ============================================
+-- QUERY 8: MULTI-COLUMN ORDER BY
+-- ============================================
 -- Which doctors have the most appointments?
 -- If doctors have the same number, sort them alphabetically by name.
 -- Demonstrates multi-column ORDER BY
@@ -56,6 +85,9 @@ LEFT JOIN Appointments
 GROUP BY Doctors.Doctor_ID, Doctors.Doctor_Name
 ORDER BY Total_Appointments DESC, Doctors.Doctor_Name ASC;
 
+-- ============================================
+-- QUERY 9: GROUP BY AND HAVING
+-- ============================================
 -- Which payment methods have total billing amounts greater than KSh 10,000?
 -- Demonstrates GROUP BY and HAVING
 
@@ -66,6 +98,9 @@ FROM Billing
 GROUP BY Payment_Method
 HAVING SUM(Amount) > 10000;
 
+-- ============================================
+-- QUERY 10: GROUP BY AND HAVING
+-- ============================================
 -- Which doctors have more than one appointment?
 -- Demonstrates GROUP BY and HAVING
 
@@ -76,6 +111,9 @@ FROM Appointments
 GROUP BY Doctor_ID
 HAVING COUNT(Appointment_ID) > 1;
 
+-- ============================================
+-- QUERY 11: SCALAR SUBQUERY
+-- ============================================
 -- Which billing records are above the average hospital bill?
 -- Demonstrates a scalar subquery
 
@@ -91,6 +129,9 @@ WHERE Amount > (
 )
 ORDER BY Amount DESC;
 
+-- ============================================
+-- QUERY 12: CORRELATED SUBQUERY
+-- ============================================
 -- Which doctors have at least one appointment?
 -- Demonstrates a correlated subquery
 
@@ -105,6 +146,9 @@ WHERE EXISTS (
     WHERE a.Doctor_ID = d.Doctor_ID
 );
 
+-- ============================================
+-- QUERY 13: VIEW
+-- ============================================
 -- View 1: Provides a reusable summary of patient billing information.
 CREATE OR REPLACE VIEW Patient_Billing_Summary AS
 SELECT
