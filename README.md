@@ -14,11 +14,11 @@
    ROLE ON THIS PROJECT:
    
 4. NAME: Andrew Korir
-   USERNAME:
+   USERNAME: AndrewSekani
    ROLE ON THIS PROJECT:
    
-5. NAME:
-   USERNAME:
+5. NAME: Ronny Kibet
+   USERNAME: Ironny2006
    ROLE ON THIS PROJECT:
    
 6. NAME:
@@ -48,31 +48,31 @@ Entity-Relationship Diagram
 - Stores information about hospital departments including department name, location, and phone number.
 - Referenced by Doctors.Department_ID.
  
-# 3. Doctors
+# 2. Doctors
 - Stores information about hospital doctors, including their name, gender, specialty, contact details, hire date, and department.
 -  Department_ID is an FK to `Departments`. Referenced by Appointments.Doctor_ID and Prescriptions.Doctor_ID.
   
-# 4. Patients
+# 3. Patients
 - Stores patient information, including their name, gender, date of birth, blood group, phone number, email, and registration date.
 - Referenced by Appointments.Patient_ID, Patient_Medication.Patient_ID, Prescriptions.Patient_ID, and Billing.Patient_ID.
   
-# 5. Appointments
+# 4. Appointments
 - Stores appointment information between patients and doctors, including the appointment date, time, and status.
 - Patient_ID is an FK to Patients. Doctor_ID is an FK to Doctors. Referenced by Billing.Appointment_ID.
   
-# 6. Medicines
+# 5. Medicines
 - Stores information about medicines available in the hospital, including the medicine name and price.
 - Referenced by Patient_Medication.Medicine_ID.
 
-# 8. Patient_Medication
+# 6. Patient_Medication
 - Acts as a junction table between Patients and Medicines. It records which medicine a patient is taking, including the dosage and duration in days.
 - Patient_ID is an FK to Patients. Medicine_ID is an FK to Medicines.
 
-# 10. Prescriptions
+# 7. Prescriptions
 - Stores prescription information by linking patients with the doctors who prescribed their medication.
 - Patient_ID is an FK to Patients. Doctor_ID is an FK to `Doctors`.
 
-# 12. Billing
+# 8. Billing
 - Stores hospital billing information, including the patient, appointment, amount, payment method, and payment status.
 - Patient_ID is an FK to `Patients`. Appointment_ID is an FK to Appointments.
 
@@ -81,13 +81,13 @@ Entity-Relationship Diagram
 Hospital-Database/
 ├── README.md
 ├── ddl/
-│   └── 01_schema.sql        -- table definitions, keys, constraints
+│   └── 01_schema.sql        - table definitions, keys, constraints
 ├── dml/
-│   └── 01_seed_data.sql     -- sample data
+│   └── 01_seed_data.sql     - sample data
 ├── dql/
-│   └── 01_queries.sql       -- analytical queries + views
+│   └── 01_queries.sql       - analytical queries + views
 └── docs/
-    └── erd.png              -- entity-relationship diagram
+    └── erd.png              - entity-relationship diagram
 
 # How to Run This Project
 Create a fresh database:
