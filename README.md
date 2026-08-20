@@ -147,7 +147,7 @@ Why it matters: This helps hospital management monitor doctor workloads and iden
 # VIEWS
 # 1. Patient_Billing_Summary 
  What it shows: Shows patient billing information, including patient name, billing amount, payment method, and payment status. 
- Why we made it a view: Makes billing information easier to access without repeatedly writing the Patients-Billing JOIN. |
+ Why we made it a view: Makes billing information easier to access without repeatedly writing the Patients-Billing JOIN. 
 
 # 2. Doctor_Appointment_Summary
   What it shows: Shows doctors, their specialties, patients, appointment dates, times, and appointment status. 
