@@ -1,11 +1,39 @@
 # Hospital Database
 
-Replace everything in brackets. Delete this quote line when you're done.
+# TEAM
+1. NAME: Niva Achieng
+   USERNAME: Nivano3ls
+   ROLE ON THIS PROJECT:
 
-# NAME                    GITHUB USERNAME                  ROLE ON THIS PROJECT
-Niva Achieng              Nivano3ls
-Heinze Muhazi             heinze01
+2. NAME: Peter Muchuga
+   USERNAME:
+   ROLE ON THIS PROJECT:
+   
+3. NAME: Heinze Muhazi
+   USERNAME: heinze01
+   ROLE ON THIS PROJECT:
+   
+4. NAME: Andrew Korir
+   USERNAME:
+   ROLE ON THIS PROJECT:
+   
+5. NAME:
+   USERNAME:
+   ROLE ON THIS PROJECT:
+   
+6. NAME:
+   USERNAME:
+   ROLE ON THIS PROJECT:
+
+7. NAME:
+   USERNAME:
+   ROLE ON THIS PROJECT:
+
+8. NAME:
+   USERNAME:
+   ROLE ON THIS PROJECT:
 # DOMAIN
+
 The domain of this project is hospital management. The database helps organize important hospital information, including patients, doctors, departments, appointments, medicines, prescriptions, and billing records.
 
 Entity-Relationship Diagram
