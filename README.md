@@ -91,7 +91,7 @@ SELECT
 FROM Billing
 ORDER BY Amount DESC;
 
-# Why it matters: This helps hospital management identify patients with the highest bills and review outstanding or significant payments. 
+Why it matters: This helps hospital management identify patients with the highest bills and review outstanding or significant payments. 
 
 # 2. How much money is associated with each payment method?
 
@@ -101,7 +101,7 @@ SELECT
 FROM Billing
 GROUP BY Payment_Method;
 
-# Why it matters: This helps management understand the amount of money associated with each payment method and supports financial analysis.
+Why it matters: This helps management understand the amount of money associated with each payment method and supports financial analysis.
 
 # 3. Which doctors have the most appointments?
 
@@ -114,7 +114,7 @@ LEFT JOIN Appointments
 GROUP BY Doctors.Doctor_ID, Doctors.Doctor_Name
 ORDER BY Total_Appointments DESC, Doctors.Doctor_Name ASC;
 
-# Why it matters: This helps hospital management monitor doctor workloads and identify doctors handling more appointments.
+Why it matters: This helps hospital management monitor doctor workloads and identify doctors handling more appointments.
 
 # VIEWS
 # 1. Patient_Billing_Summary 
