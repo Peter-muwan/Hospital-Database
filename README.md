@@ -3,44 +3,22 @@
 # TEAM
 1. NAME: Niva Achieng
    USERNAME: Nivano3ls
-   ROLE ON THIS PROJECT:
-
 2. NAME: Peter Muchuga
-   USERNAME:
-   ROLE ON THIS PROJECT:
-   
+   USERNAME: Peter-muwan
 3. NAME: Heinze Muhazi
    USERNAME: heinze01
-   ROLE ON THIS PROJECT:
-   
 4. NAME: Andrew Korir
    USERNAME: AndrewSekani
-   ROLE ON THIS PROJECT:
-   
 5. NAME: Ronny Kibet
    USERNAME: Ironny2006
-   ROLE ON THIS PROJECT:
+   # COMMENT: not every one had a laptop to take part in committing so we decided on one person to do the commit upon agreement and discussion of the database and the queries.
    
-6. NAME:
-   USERNAME:
-   ROLE ON THIS PROJECT:
-
-7. NAME:
-   USERNAME:
-   ROLE ON THIS PROJECT:
-
-8. NAME:
-   USERNAME:
-   ROLE ON THIS PROJECT:
 # DOMAIN
 
 The domain of this project is hospital management. The database helps organize important hospital information, including patients, doctors, departments, appointments, medicines, prescriptions, and billing records.
 
-Entity-Relationship Diagram
-
-
-
-[One or two sentences describing the key relationships — e.g. "A rider can take many trips; each trip belongs to exactly one driver and one rider; trips are linked to a single payment record."]
+# ENTITY-RELATIONSHIP DIAGRAM
+A department can have many doctors, while each doctor belongs to one department. Patients can have many appointments, prescriptions, medication records, and billing records. Each appointment links one patient to one doctor, while the Patient_Medication table creates a many-to-many relationship between patients and medicines. Billing records are linked to both patients and appointments.
 
 # SCHEMA SUMMARY
 
