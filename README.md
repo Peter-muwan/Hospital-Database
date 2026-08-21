@@ -11,8 +11,7 @@
    USERNAME: AndrewSekani
 5. NAME: Ronny Kibet
    USERNAME: Ironny2006
-   # COMMENT: not every one had a laptop to take part in committing so we decided on one person to do the commit upon agreement and discussion of the database and the queries.
-   
+  
 # DOMAIN
 
 The domain of this project is hospital management. The database helps organize important hospital information, including patients, doctors, departments, appointments, medicines, prescriptions, and billing records.
