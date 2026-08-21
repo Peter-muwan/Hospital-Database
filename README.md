@@ -27,7 +27,7 @@ A department can have many doctors, while each doctor belongs to one department.
  
 # 2. Doctors
 - Stores information about hospital doctors, including their name, gender, specialty, contact details, hire date, and department.
--  Department_ID is an FK to `Departments`. Referenced by Appointments.Doctor_ID and Prescriptions.Doctor_ID.
+-  Department_ID is an FK to Departments. Referenced by Appointments.Doctor_ID and Prescriptions.Doctor_ID.
   
 # 3. Patients
 - Stores patient information, including their name, gender, date of birth, blood group, phone number, email, and registration date.
@@ -47,11 +47,11 @@ A department can have many doctors, while each doctor belongs to one department.
 
 # 7. Prescriptions
 - Stores prescription information by linking patients with the doctors who prescribed their medication.
-- Patient_ID is an FK to Patients. Doctor_ID is an FK to `Doctors`.
+- Patient_ID is an FK to Patients. Doctor_ID is an FK to Doctors.
 
 # 8. Billing
 - Stores hospital billing information, including the patient, appointment, amount, payment method, and payment status.
-- Patient_ID is an FK to `Patients`. Appointment_ID is an FK to Appointments.
+- Patient_ID is an FK to Patients. Appointment_ID is an FK to Appointments.
 
 # REPOSITORY STRUCTURE
 
