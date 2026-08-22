@@ -85,9 +85,6 @@ mysql -u root -p Hospital < dql/01_queries.sql
 Scripts must be run in this order — DML depends on DDL, DQL depends on DML.
 
 # FEATURED QUERIES
-
-Pick your best 3–4 queries from dql/01_queries.sql and showcase them here — the question they answer and why it matters to the business.
-
 # 1. Which patients have the highest billing amounts?
 
 SELECT
